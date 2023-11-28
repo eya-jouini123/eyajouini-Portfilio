@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+        <script src="https://kit.fontawesome.com/5b7315c09d.js" crossorigin="anonymous"></script> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style (3).css">
+    <title>My Portfilio</title>
+    
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+</head>
+<body>
+
+    <div class="popup">
+        <div class="window">
+            <div class="colorchange">
+                <h4>Choose Color : </h4>
+                <span data-color="red"></span>
+                <span data-color="purple"></span>
+                <span data-color="green"></span>
+                <span data-color="pink"></span>
+                <span data-color="black"></span>
+
+
+            </div>
+
+            <div onclick="closepopup()" class="close">
+                <i  class="fa-solid fa-xmark "></i>
+            </div>
+        </div>
+    </div>
+
+
+    <div onclick="showparametre()" class="parametre"><i class="fa-solid fa-gear"></i> </div>
+
+
+
+<div id="main">
+
+
+
+<div class="tabsButton">
+  
+    <ul class="tabs">
+        <li><a class="active" data-index="0">About</a></li>
+        <li><a data-index="1">Services</a></li>
+        <li><a data-index="2">Skills</a></li>
+        <li><a data-index="3">Projects</a></li>
+        <li><a data-index="4">Why Me</a></li>
+        <li><a data-index="5">Contact</a></li>
+      </ul>
+  
+</div>
+
+
+
+    <div class="allTabs">
+<section id="about" class="about">
+   <div class="container">
+<div class="content">
+<h1>Eya Jouini.</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio libero quo incidunt excepturi. Porro omnis assumenda ipsa soluta laudantium. Nulla incidunt labore cum. Rem molestias distinctio quia expedita tenetur voluptatum.</p>
+<a href="">Contact Me</a>
+</div> 
+<div class="image">
+    <img src="Captureeya.PNG" alt="">
+</div>  
+
+
+</div>
+</section>
+
+<!--start services-->
+<section id="service" class="all services ">
+    <h1 class="title">My Services</h1>
+    <div class="container">
+        <div class="box">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h4>Graphics design</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-code"></i>            <h4>Web development</h4>
+        </div>
+        <div class="box">
+            <i class="fa-brands fa-searchengin"></i>          <h4>Seo</h4>
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-cart-shopping"></i>           
+            <h4>E-commerce website</h4>
+        </div>
+      
+    </div>
+  
+</section>
+
+<!--end services-->
+
+<!--start skills-->
+<section id="skills" class="all skills anglais">
+    <h1 class="title">My Skills</h1>
+    <div class="container">
+        <div class="box">
+            <div class="content">
+                <h5>HTML</h5>
+                <span  >80%</span>
+            </div>
+            <div class="progress">
+                <span data-toul="80%"></span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h5>CSS</h5>
+                <span  >90%</span>
+            </div>
+            <div class="progress">
+                <span data-toul="90%"></span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h5>JS</h5>
+                <span  >60%</span>
+            </div>
+            <div class="progress">
+                <span data-toul="60%"></span>
+            </div>
+        </div>
+        <div class="box">
+            <div class="content">
+                <h5>DESIGN</h5>
+                <span  >85%</span>
+            </div>
+            <div class="progress">
+                <span data-toul="85%"></span>
+            </div>
+        </div>
+      
+    </div>
+</section>
+
+<!--end skills-->
+
+
+<!--start projects-->
+<!-- Modify your HTML structure for the projects section and filter buttons -->
+<section id="projects">
+    <h1 class="title">Projects</h1>
+    <div id="projectscontainer" class="container">
+
+    <div class="project">
+      <h2>Project 1</h2>
+      <p>Description of Project 1.</p>
+    </div>
+    <div class="project">
+      <h2>Project 2</h2>
+      <p>Description of Project 2.</p>
+    </div>
+    </div>
+
+    <!-- New project input and button -->
+    <div id="newProject">
+      <input type="text" id="projectName" placeholder="Project Name">
+      <textarea id="projectDescription" placeholder="Project Description"></textarea>
+      <button onclick="addProject()">Add Project</button>
+    </div>
+  </section>
+  
+
+<!--end projects-->
+
+<!--start why-->
+<section id="why" class="all why anglais">
+    <span></span>
+    <h1 class="title">Why Choising Me</h1>
+    <div class="container">
+        <div class="box">
+            <i class="fa-solid fa-money-bill-wave"></i>  
+            <p>reasonable price
+            </p>                 
+        </div>
+        <div class="box">
+            <i class="fa-sharp fa-solid fa-gauge-simple-high"></i>  
+            <p>You will have the job in a fairly short time
+            </p>           
+        </div>
+        <div class="box">
+            <i class="fa-solid fa-briefcase"></i>            <p>     a professional job
+
+            </p>       
+        </div>
+     
+   
+    </div>
+</section>
+
+<!--end why-->
+
+
+<!--start contact-->
+<section id="contact" class="all contacter-nous anglais">
+    <h1 class="title">Contact Me</h1>
+    <div class="container">
+        <form>
+         <input id="nom" type="text" placeholder="write ur name " required>
+         <input id="mail" type="email" placeholder="email " >
+
+         <input id="objet" type="text" placeholder="objet " >
+         <textarea id="message"  placeholder="msg " name="" id="" cols="30" rows="10"></textarea>
+          <button type="button" onclick="submitForm()">send message</button>         
+
+          <div class="social">
+            <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a> 
+            <a href="tel:+216 54442883"> <i class="fa-solid fa-phone-volume"></i></a>      
+            <a href="mailto:eyajouini@gamil.com"><i class="fa-solid fa-envelope"></i></a>     
+             </div>
+
+
+
+
+
+
+
+        </form>
+    </div>
+</section>
+
+
+</div>
+</div>
+
+
+
+  
+<script src="main.js" ></script>
+
+
+
+  
+  
+  
+  
+
+
+
+
+
+ </body>
+
+
+ </html>
